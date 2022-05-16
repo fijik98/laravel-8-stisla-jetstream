@@ -13,7 +13,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
+|
+|
+|
+|--------------------------------------------------------------------------
+| Para forzar https ->              o        App/Providers/AppServiceProvider -> boot()
+|--------------------------------------------------------------------------
+|   use Illuminate\Support\Facades\URL;
+|   URL::forceScheme('https');
+|
+|
+|
+*/
 Route::get('/', function () {
     return view('welcome');
 });

@@ -7,18 +7,19 @@
                     @include('components.sort-icon', ['field' => 'id'])
                 </a></th>
                 <th><a wire:click.prevent="sortBy('name')" role="button" href="#">
-                    Name
+                    Nombre
                     @include('components.sort-icon', ['field' => 'name'])
                 </a></th>
                 <th><a wire:click.prevent="sortBy('email')" role="button" href="#">
                     Email
                     @include('components.sort-icon', ['field' => 'email'])
                 </a></th>
+                <th>Imagen</th>
                 <th><a wire:click.prevent="sortBy('created_at')" role="button" href="#">
-                    Tanggal Dibuat
+                    Fecha de alta
                     @include('components.sort-icon', ['field' => 'created_at'])
                 </a></th>
-                <th>Action</th>
+                <th>Accion</th>
             </tr>
         </x-slot>
         <x-slot name="body">
@@ -27,6 +28,7 @@
                     <td>{{ $user->id }}</td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
+                    <td><img class="rounded-full object-cover wd h-10 w-10" src="{{ $user->profile_photo_url }}" alt=""> </td>
                     <td>{{ $user->created_at->format('d M Y H:i') }}</td>
                     <td class="whitespace-no-wrap row-action--icon">
                         <a role="button" href="/user/edit/{{ $user->id }}" class="mr-3"><i class="fa fa-16px fa-pen"></i></a>

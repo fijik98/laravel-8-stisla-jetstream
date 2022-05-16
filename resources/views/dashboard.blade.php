@@ -8,7 +8,8 @@
         </div>
     </x-slot>
 
-    <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="bg-black overflow-hidden shadow-xl sm:rounded-lg">
+        hola
         <x-jet-welcome />
     </div>
 </x-app-layout>

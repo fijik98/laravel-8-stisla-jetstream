@@ -10,8 +10,8 @@ $links = [
             [
                 "section_text" => "User",
                 "section_list" => [
-                    ["href" => "user", "text" => "Data User"],
-                    ["href" => "user.new", "text" => "Buat User"]
+                    ["href" => "user", "text" => "Usuarios"],
+                    ["href" => "user.new", "text" => "Crear Usuarios"]
                 ]
             ]
         ],
